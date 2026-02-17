@@ -4,6 +4,10 @@ import Testting from "./testting";
 import Register from "./Components/MUI/Register";
 import ArrowFunction from "./ES7/ArrowFunction";
 import ArrayMethod from "./ES7/ArrayMethod";
+import Card from "./ES7/card";
+import Destructuring from "./ES7/Destructuring";
+import MuiCard from "./Components/MUI/MuiCard";
+import MuiAppbar from "./Components/MUI/MuiAppbar";
 
 function Home() {
   return (
@@ -57,12 +61,16 @@ function App() {
   return (
     <div>
       <BrowserRouter>
+        <MuiAppbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Testting" element={<Testting />} />
           <Route path="/Register" element={<Register />} />
-          <Route path="/Arrow" element={<ArrowFunction />} />
+          <Route path="/ArrowFunction" element={<ArrowFunction />} />
           <Route path="/ArrayMethod" element={<ArrayMethod />} />
+          <Route path="/Card" element={<Card />} />
+          <Route path="/Destructuring" element={<Destructuring />} />
+          <Route path="/MuiCard" element={<MuiCard />} />
         </Routes>
       </BrowserRouter>
     </div>

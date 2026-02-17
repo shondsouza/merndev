@@ -7,8 +7,8 @@ export default function Testting() {
     border: "2px solid black",
   };
   return (
-    <div>
-      <h2 style={{ color: "red", border: "2px solid black" }}></h2>
+    <div style={{ padding: "2rem" }}>
+      <h2 style={{ color: "red", border: "2px solid black" }}>Testing Page</h2>
       <h4 style={mystyle}>INTERNAL CSS</h4>
 
       <h5 className="myclass">EXTERNAL CSS</h5>
